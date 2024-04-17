@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | CalcATOM</title>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <link rel="icon" href="hero/CodeATOM.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header class="navbar">
+
+    <div class="logo">
+        <a href="#">
+            <img id="logo_img" src="/hero/CodeATOM.png" alt="#">
+            <div id="logo_txt"><a href="#">CalcATOM</a></div>
+        </a>
+    </div>
+    
+    <div class="nav_items">
+        <ul class="nav_items_main">
+            <li class="nav_items_li"><a class="nav_items_links" href="#">Home</a></li>
+            <li class="nav_items_li"><a class="nav_items_links" href="#">Home</a></li>
+            <li class="nav_items_li"><a class="nav_items_links" href="#">Home</a></li>
+            <li class="nav_items_li"><a class="nav_items_links" href="#">Home</a></li>
+            <li class="nav_items_li"><a class="nav_items_links" href="#">Log In/Sign In</a></li>
+        </ul>
+    </div>
+
+</header>
+    <div class="container">
+        <div class="panel">
+          <h3>Admin login</h3>
+          <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+          </form>
+        </div>
+      </div>
+      
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+          event.preventDefault();
+    
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+    
+          // Adı "ravox" və şifrəsi "admin" olanı yoxla
+          if (username === "ravox" && password === "admin") {
+            // Sistemə daxil et
+            window.location.href = "admin_paneli.html"; // Burada admin panelinin səhifəsinin URL-i təyin edilməlidir
+          } else {
+            // İstifadəçiyə xəbərdarlıq ver
+            alert("İstifadəçi adı və ya şifrə yalnışdır. Zəhmət olmasa yenidən cəhd edin.");
+          }
+        });
+      </script>
+</body>
+</html>
