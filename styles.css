@@ -8350,6 +8350,15 @@ ul, li {
     background-color: #222;
     color: #fbfbfb;
 }
+.main_sec0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#pc {
+  width: 40%;
+}
 .main_sec1 {
   width: 100%;
   height: 200vh;
